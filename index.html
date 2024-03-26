@@ -7,6 +7,10 @@
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
+<!--each div represent a component. I felt it easier to manage when it comes with DOM (Document Object Model) management-->
+<!--As time is limited, bootstrap has simplified the css so i could focus on the logic.-->
+
+<!--Winning div that display the score and offer to the player the option to restart or go back to the menu.-->
 <div id="success" class="w-50 flex justify-content-center mx-auto" hidden>
     <div class="card m-5  flex justify-content-center">
         <div class="card-title text-center m-5">
@@ -18,6 +22,8 @@
         </div>
     </div>
 </div>
+
+<!--this div display the game, such as the chrono user's input and some hints. All managed with JS and DOM. -->
 <div id="game" class="w-50 flex justify-content-center mx-auto" hidden>
     <div class="card m-5">
         <div class="card-title text-center">
@@ -38,6 +44,8 @@
         </div>
     </div>
 </div>
+
+<!--and here are the rules. the game start as soon as the player hit the start button-->
 <div id="rules" class="w-50 flex justify-content-center mx-auto">
     <div class="card m-5">
         <div class="card-title text-center">
